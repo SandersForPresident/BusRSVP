@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+# Rails Dependencies
 gem 'rails', '4.2.4'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
@@ -10,8 +11,19 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# Environment Dependencies
 group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'pry'
+  #----------------
   gem 'byebug'
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'faker'
+  gem 'shoulda'
 end
 
 group :development do
