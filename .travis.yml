@@ -1,0 +1,8 @@
+cache: bundler
+sudo: false
+
+language: ruby
+rvm: 2.2
+
+before_script: RAILS_ENV=test rake db:migrate
+script:  bundle exec rspec
