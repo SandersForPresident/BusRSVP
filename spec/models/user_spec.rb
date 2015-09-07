@@ -6,5 +6,6 @@ RSpec.describe User, type: :model do
   end
 
   it { should have_many(:trips_hosted) }
+  it { should have_many(:reservations) }
   it { should have_many(:trips) }
 end
