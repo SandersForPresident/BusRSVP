@@ -12,4 +12,6 @@
  *
  *= require_tree .
  *= require_self
+ *= require berniestrap/dist/css/bootstrap.css
+ *= require berniestrap/dist/css/bootstrap-theme.css
  */

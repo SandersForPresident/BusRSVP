@@ -17,6 +17,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro'
 gem 'omniauth-facebook'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-berniestrap'
+end
+
 # Environment Dependencies
 group :development, :test do
   gem 'rspec-rails'
