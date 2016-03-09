@@ -4,5 +4,5 @@ sudo: false
 language: ruby
 rvm: 2.3.0
 
-before_script: RAILS_ENV=test rake db:migrate
+before_script: RAILS_ENV=test bundle exec rake db:migrate
 script:  bundle exec rspec
