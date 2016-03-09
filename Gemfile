@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.3.0'
 
 # Rails Dependencies
-gem 'rails', '4.2.4'
+gem 'rails', '4.2.6'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -23,7 +23,7 @@ end
 
 # Environment Dependencies
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '3.4.2' # LOCKED DOWN
   gem 'factory_girl_rails'
   gem 'pry'
   #----------------
